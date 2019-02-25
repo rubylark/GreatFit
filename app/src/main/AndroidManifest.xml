@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dinodevs.greatfitwatchface">
+    package="com.dinodevs.greatfitweatherland">
 
     <!-- Required to act as a custom watch face. -->
     <uses-permission android:name="com.google.android.permission.PROVIDE_BACKGROUND" />
@@ -17,9 +17,9 @@
         <!-- Mainface -->
         <activity android:exported="true" android:launchMode="singleTask" android:name="com.huami.watch.watchface.custom.ui.WatchFaceSettingsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <activity android:launchMode="singleTask" android:name="com.huami.watch.watchface.custom.ui.WatchFaceCustomActivity"/>
-        <activity android:exported="true" android:launchMode="singleTask" android:name="com.dinodevs.greatfitwatchface.settings.Settings" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <service android:name="com.dinodevs.greatfitwatchface.GreatFitSlpt"/>
-        <service android:name="com.dinodevs.greatfitwatchface.GreatFit" android:label="@string/watch_face" android:permission="android.permission.BIND_WALLPAPER">
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.dinodevs.greatfitweatherland.settings.Settings" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.dinodevs.greatfitweatherland.GreatFitWeatherLandSlpt"/>
+        <service android:name="com.dinodevs.greatfitweatherland.GreatFitWeatherLand" android:label="@string/watch_face" android:permission="android.permission.BIND_WALLPAPER">
             <meta-data android:name="android.service.wallpaper" android:resource="@xml/custom_watch_face" />
             <meta-data android:name="com.google.android.wearable.watchface.preview" android:resource="@drawable/preview" />
             <meta-data android:name="com.google.android.wearable.watchface.preview_circular" android:resource="@drawable/preview" />
@@ -33,9 +33,9 @@
         <!--
             Here you can copy-paste the above code (under "Mainface") to add a second watch face
         -->
-        <service android:name="com.dinodevs.greatfitwatchface.CustomDataUpdater" />
+        <service android:name="com.dinodevs.greatfitweatherland.CustomDataUpdater" />
         <receiver
-            android:name="com.dinodevs.greatfitwatchface.Reciever"
+            android:name="com.dinodevs.greatfitweatherland.Reciever"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -46,11 +46,11 @@
                 <category android:name="android.intent.category.HOME" />
             </intent-filter>
         </receiver>
-        <activity android:name="com.dinodevs.greatfitwatchface.settings.ColorActivity"></activity>
-        <activity android:name="com.dinodevs.greatfitwatchface.settings.OthersActivity"></activity>
-        <activity android:name="com.dinodevs.greatfitwatchface.settings.WidgetsActivity"></activity>
-        <activity android:name="com.dinodevs.greatfitwatchface.settings.ProgressWidgetsActivity"></activity>
-        <activity android:name="com.dinodevs.greatfitwatchface.settings.LanguageActivity"></activity>
+        <activity android:name="com.dinodevs.greatfitweatherland.settings.ColorActivity"></activity>
+        <activity android:name="com.dinodevs.greatfitweatherland.settings.OthersActivity"></activity>
+        <activity android:name="com.dinodevs.greatfitweatherland.settings.WidgetsActivity"></activity>
+        <activity android:name="com.dinodevs.greatfitweatherland.settings.ProgressWidgetsActivity"></activity>
+        <activity android:name="com.dinodevs.greatfitweatherland.settings.LanguageActivity"></activity>
     </application>
 
 </manifest>

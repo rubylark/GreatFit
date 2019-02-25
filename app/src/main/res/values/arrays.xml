@@ -3,34 +3,34 @@
 
     <!-- Constant Elements -->
     <array name="hours">
-        <item name="font_size">190px</item> <!-- font size -->
-        <item name="left">110px</item> <!-- position top -->
-        <item name="top">226px</item> <!-- position left -->
-        <item name="color">#ff0000</item> <!-- color -->
+        <item name="font_size">90px</item> <!-- font size -->
+        <item name="left">90px</item> <!-- position top -->
+        <item name="top">230px</item> <!-- position left -->
+        <item name="color">#fff</item> <!-- color -->
         <item name="align_left">false</item> <!-- align left -->
     </array>
     <!-- ":" -->
-    <!-- <array name="indicator">
-       <item name="font_size">91px</item>
-       <item name="left">158px</item>
-       <item name="top">139px</item>
+    <array name="indicator">
+       <item name="font_size">90px</item>
+       <item name="left">160px</item>
+       <item name="top">230px</item>
        <item name="color">#fff</item>
        <item name="align_left">false</item>
-    </array> -->
+    </array>
     <array name="minutes">
-        <item name="font_size">130px</item>
-        <item name="left">220px</item>
-        <item name="top">184px</item>
+        <item name="font_size">90px</item>
+        <item name="left">225px</item>
+        <item name="top">230px</item>
         <item name="color">#fff</item>
         <item name="align_left">false</item> <!-- not supported -->
     </array>
-    <array name="seconds">
+    <!--array name="seconds">
        <item name="font_size">32px</item>
        <item name="left">282px</item>
        <item name="top">140px</item>
        <item name="color">#fff</item>
-       <item name="align_left">false</item> <!-- not supported -->
-    </array>
+       <item name="align_left">false</item> --><!-- not supported -->
+    <!--/array -->
     <!-- NOT SUPPORTED YET
     <array name="analog_hours">
         <item name="image">@drawable/hours</item> rotating img
@@ -48,31 +48,31 @@
         <item name="top">160px</item>
     </array>
     -->
-    <array name="am_pm">
+<!--    <array name="am_pm">
        <item name="font_size">30px</item>
        <item name="left">282px</item>
-       <item name="top">180px</item>
+       <item name="top">218px</item>
        <item name="color">#fff</item>
        <item name="align_left">false</item>
-    </array>
+    </array>-->
     <array name="weekday">
-        <item name="font_size">28px</item>
-        <item name="left">182px</item>
-        <item name="top">254px</item>
+        <item name="font_size">20px</item>
+        <item name="left">70px</item>
+        <item name="top">265px</item>
         <item name="color">#fff</item>
-        <item name="align_left">true</item>
+        <item name="align_left">false</item>
     </array>
     <array name="month">
-        <item name="font_size">28px</item>
-        <item name="left">182px</item>
-        <item name="top">220px</item>
+        <item name="font_size">20px</item>
+        <item name="left">105px</item>
+        <item name="top">265px</item>
         <item name="color">#fff</item>
         <item name="align_left">true</item>
     </array>
     <array name="day">
-        <item name="font_size">28px</item>
-        <item name="left">234px</item>
-        <item name="top">254px</item>
+        <item name="font_size">20px</item>
+        <item name="left">151px</item>
+        <item name="top">265px</item>
         <item name="color">#fff</item>
         <item name="align_left">true</item>
     </array>
@@ -88,48 +88,51 @@
 
     <!-- Widgets -->
     <integer-array name="widgets">
-        <item>2</item> <!-- Widget 1: type from "supported widgets" list -->
-        <item>1</item> <!-- Widget 2: type from "supported widgets" list -->
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <!--<item>2</item> &lt;!&ndash; Widget 1: type from "supported widgets" list &ndash;&gt;
+        <item>1</item> &lt;!&ndash; Widget 2: type from "supported widgets" list &ndash;&gt;
         <item>18</item>
         <item>7</item>
-        <item>23</item>
+        <item>23</item>-->
     </integer-array>
 
     <!-- Widget 1 -->
     <array name="widget1">
-        <item name="font_size">24px</item> <!-- font size -->
-        <item name="left">110px</item> <!-- position top -->
-        <item name="top">77px</item> <!-- position left -->
+        <item name="font_size">20px</item> <!-- font size -->
+        <item name="left">155px</item> <!-- position top -->
+        <item name="top">285px</item> <!-- position left -->
         <item name="color">#fff</item> <!-- color -->
-        <item name="align_left">true</item> <!-- align left -->
-        <item name="units">true</item> <!-- units (if supported) -->
-        <item name="icon">true</item> <!-- icon -->
-        <item name="iconLeft">87px</item> <!-- icon's left positioning -->
-        <item name="iconTop">58px</item> <!-- icon's top positioning -->
+        <item name="align_left">false</item> <!-- align left -->
+        <item name="units">false</item> <!-- units (if supported) -->
+        <item name="icon">false</item> <!-- icon -->
+        <item name="iconLeft">165px</item> <!-- icon's left positioning -->
+        <item name="iconTop">268px</item> <!-- icon's top positioning -->
     </array>
     <!-- Widget 2 -->
     <array name="widget2">
-        <item name="font_size">24px</item>
-        <item name="left">192px</item>
-        <item name="top">77px</item>
+        <item name="font_size">20px</item>
+        <item name="left">215px</item>
+        <item name="top">285px</item>
         <item name="color">#fff</item>
         <item name="align_left">true</item>
-        <item name="units">true</item>
-        <item name="icon">true</item>
-        <item name="iconLeft">170px</item>
-        <item name="iconTop">58px</item>
+        <item name="units">false</item>
+        <item name="icon">true</item>-
+        <item name="iconLeft">190px</item>
+        <item name="iconTop">268px</item>
     </array>
     <!-- Widget 3 -->
     <array name="widget3">
-        <item name="font_size">24px</item>
-        <item name="left">90px</item>
-        <item name="top">256px</item>
+        <item name="font_size">20px</item>
+        <item name="left">215px</item>
+        <item name="top">265px</item>
         <item name="color">#fff</item>
         <item name="align_left">true</item>
         <item name="units">true</item>
-        <item name="icon">true</item>
-        <item name="iconLeft">66px</item>
-        <item name="iconTop">238px</item>
+        <item name="icon">false</item>
+        <item name="iconLeft">190px</item>
+        <item name="iconTop">248px</item>
     </array>
     <!-- Widget 4 -->
     <array name="widget4">
@@ -162,7 +165,7 @@
 
     <!-- Progress bars -->
     <integer-array name="circle_bars">
-        <item>0</item> <!-- Bar 1: type from "supported progress elements" list -->
+       <!-- <item>0</item> &lt;!&ndash; Bar 1: type from "supported progress elements" list &ndash;&gt;-->
     </integer-array>
 
     <!-- Bar 1 -->
@@ -262,31 +265,31 @@
     <!-- Supported Widgets -->
     <string-array name="supported_widgets">
         <item>date</item> <!-- 0 -->
-        <item>calories</item> <!-- 1 -->
+        <!--<item>calories</item>--> <!-- 1 -->
         <item>steps</item> <!-- 2... -->
         <item>heart_rate</item>
-        <item>total_distance</item>
-        <item>today_distance</item>
-        <item>floors</item>
-        <item>battery_percent</item>
+        <!--<item>total_distance</item>-->
+        <!--<item>today_distance</item>-->
+        <!--<item>floors</item>-->
+        <!--<item>battery_percent</item>-->
         <item>temperature</item>
-        <item>weather_img</item>
-        <item>city</item>
-        <item>humidity</item>
-        <item>uv</item>
-        <item>wind_direction</item>
-        <item>wind_strength</item>
+        <!--<item>weather_img</item>-->
+        <!--<item>city</item>-->
+        <!--<item>humidity</item>-->
+        <!--<item>uv</item>-->
+        <!--<item>wind_direction</item>-->
+        <!--<item>wind_strength</item>-->
         <!-- <item>sunset</item> -->
         <!-- <item>sunrise</item> -->
-        <item>watch_alarm</item>
-        <item>air_pressure</item> <!-- Uses a sensor which may drain a little the battery -->
-        <item>altitude</item> <!-- Calculated approximately based on air pressure -->
-        <item>phone_battery</item>
-        <item>phone_alarm</item>
-        <item>xdrip</item>
-        <item>world_time</item>
-        <item>notifications</item>
-        <item>none</item> <!-- 23 -->
+        <!--<item>watch_alarm</item>-->
+        <!--<item>air_pressure</item>--> <!-- Uses a sensor which may drain a little the battery -->
+        <!--<item>altitude</item>--> <!-- Calculated approximately based on air pressure -->
+        <!--<item>phone_battery</item>-->
+        <!--<item>phone_alarm</item>-->
+        <!--<item>xdrip</item>-->
+        <!--<item>world_time</item>-->
+        <!--<item>notifications</item>-->
+        <!--<item>none</item>--> <!-- 23 -->
     </string-array>
 
     <!-- Supported Progress Elements -->

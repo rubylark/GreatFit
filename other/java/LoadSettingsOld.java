@@ -1,11 +1,11 @@
-package com.dinodevs.greatfitwatchface.settings;
+package com.dinodevs.greatfitweatherland.settings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.provider.Settings;
 
-import com.dinodevs.greatfitwatchface.R;
+import com.dinodevs.greatfitweatherland.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

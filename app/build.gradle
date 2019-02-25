@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     buildToolsVersion '28.0.3'
     defaultConfig {
-        applicationId 'com.dinodevs.greatfitwatchface'
+        applicationId 'com.dinodevs.greatfitweatherland'
         minSdkVersion 22
         targetSdkVersion 27
         versionCode 12

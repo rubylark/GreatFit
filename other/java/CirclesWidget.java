@@ -1,4 +1,4 @@
-package com.dinodevs.greatfitwatchface.widget;
+package com.dinodevs.greatfitweatherland.widget;
 
 import android.app.Service;
 import android.graphics.Canvas;
@@ -8,7 +8,7 @@ import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 
-import com.dinodevs.greatfitwatchface.settings.LoadSettings;
+import com.dinodevs.greatfitweatherland.settings.LoadSettings;
 import com.ingenic.iwds.slpt.view.arc.SlptArcAnglePicView;
 import com.ingenic.iwds.slpt.view.arc.SlptPowerArcAnglePicView;
 import com.ingenic.iwds.slpt.view.arc.SlptTodayDistanceArcAnglePicView;
@@ -28,13 +28,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.dinodevs.greatfitwatchface.R;
-import com.dinodevs.greatfitwatchface.data.Battery;
-import com.dinodevs.greatfitwatchface.data.DataType;
-import com.dinodevs.greatfitwatchface.data.Steps;
-import com.dinodevs.greatfitwatchface.data.TodayDistance;
-import com.dinodevs.greatfitwatchface.data.TotalDistance;
-import com.dinodevs.greatfitwatchface.resource.ResourceManager;
+import com.dinodevs.greatfitweatherland.R;
+import com.dinodevs.greatfitweatherland.data.Battery;
+import com.dinodevs.greatfitweatherland.data.DataType;
+import com.dinodevs.greatfitweatherland.data.Steps;
+import com.dinodevs.greatfitweatherland.data.TodayDistance;
+import com.dinodevs.greatfitweatherland.data.TotalDistance;
+import com.dinodevs.greatfitweatherland.resource.ResourceManager;
 
 public class CirclesWidget extends AbstractWidget {
 

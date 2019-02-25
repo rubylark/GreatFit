@@ -12,7 +12,7 @@
     <!-- Wind direction as arrows -->
     <bool name="wind_direction_as_arrows">false</bool> <!-- false = W, S, E, N, SW etc  , true =  ↖ ↑ ↗ ← → ↙ ↓ ↘ -->
 
-    <bool name="flashing_heart_rate_icon">true</bool>
+    <bool name="flashing_heart_rate_icon">false</bool>
 
     <bool name="am_pm_always">true</bool> <!-- Show am/pm always (not only when 12h time format) -->
 

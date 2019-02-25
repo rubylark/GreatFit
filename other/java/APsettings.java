@@ -1,4 +1,4 @@
-package com.dinodevs.greatfitwatchface.settings;
+package com.dinodevs.greatfitweatherland.settings;
 
 import android.content.Context;
 

@@ -5,7 +5,7 @@
     <array name="hours">
         <item name="font_size">90px</item> <!-- font size -->
         <item name="left">90px</item> <!-- position top -->
-        <item name="top">230px</item> <!-- position left -->
+        <item name="top">232px</item> <!-- position left -->
         <item name="color">#fff</item> <!-- color -->
         <item name="align_left">false</item> <!-- align left -->
     </array>
@@ -13,14 +13,14 @@
     <array name="indicator">
        <item name="font_size">90px</item>
        <item name="left">160px</item>
-       <item name="top">230px</item>
+       <item name="top">232px</item>
        <item name="color">#fff</item>
        <item name="align_left">false</item>
     </array>
     <array name="minutes">
         <item name="font_size">90px</item>
         <item name="left">225px</item>
-        <item name="top">230px</item>
+        <item name="top">232px</item>
         <item name="color">#fff</item>
         <item name="align_left">false</item> <!-- not supported -->
     </array>
@@ -116,6 +116,7 @@
         <item name="left">215px</item>
         <item name="top">285px</item>
         <item name="color">#fff</item>
+
         <item name="align_left">true</item>
         <item name="units">false</item>
         <item name="icon">true</item>-
@@ -165,35 +166,40 @@
 
     <!-- Progress bars -->
     <integer-array name="circle_bars">
-       <!-- <item>0</item> &lt;!&ndash; Bar 1: type from "supported progress elements" list &ndash;&gt;-->
+        <item>0</item> <!-- Bar 1: type from "supported progress elements" list -->
     </integer-array>
 
     <!-- Bar 1 -->
     <array name="progress_element1">
-        <item name="left">160px</item>
-        <item name="top">160px</item>
-        <item name="progress_type">0</item> <!-- 0 : arc/circle bar, 1 : images as steps -->
-        <!-- parameters for type 0 -->
-        <item name="radius">160px</item>
-        <item name="thickness">9px</item>
-        <item name="start_angle">207</item>
-        <item name="end_angle">153</item>
-        <item name="clockwise">1</item> <!-- 1: clockwise, 0: anticlockwise -->
-        <item name="color">0</item> <!-- select from "colors" array -->
-        <item name="background">true</item>
-        <item name="background_color">#ff0000</item>
-        <item name="background_image_slpt">circles/ring1_bg</item>
-        <!-- screen-off images, one for each color -->
-        <item>circles/ring1_1.png</item>
-        <item>circles/ring1_2.png</item>
-        <item>circles/ring1_3.png</item>
-        <item>circles/ring1_4.png</item>
-        <item>circles/ring1_5.png</item>
-        <item>circles/ring1_6.png</item>
-        <item>circles/ring1_7.png</item>
-        <item>circles/ring1_8.png</item>
-        <item>circles/ring1_bg</item>
+        <item name="left">41px</item>
+        <item name="top">240px</item>
+        <item name="progress_type">1</item> <!-- 0 : arc/circle bar -->
+        <!-- screen-on images for type 1 -->
+        <item>battery/battery0</item>
+        <item>battery/battery1</item>
+        <item>battery/battery2</item>
+        <item>battery/battery3</item>
+        <item>battery/battery4</item>
+        <item>battery/battery5</item>
+        <item>battery/battery6</item>
+        <item>battery/battery7</item>
+        <item>battery/battery8</item>
+        <item>battery/battery9</item>
+        <item>battery/battery10</item>
+        <!-- screen-off images for type 1 -->
+        <item>slpt_battery/battery0</item> <!-- location in assets folder -->
+        <item>slpt_battery/battery1</item>
+        <item>slpt_battery/battery2</item>
+        <item>slpt_battery/battery3</item>
+        <item>slpt_battery/battery4</item>
+        <item>slpt_battery/battery5</item>
+        <item>slpt_battery/battery6</item>
+        <item>slpt_battery/battery7</item>
+        <item>slpt_battery/battery8</item>
+        <item>slpt_battery/battery9</item>
+        <item>slpt_battery/battery10</item>
     </array>
+
     <!-- Bar 2 -->
     <array name="progress_element2">
         <item name="left">160px</item>
@@ -225,31 +231,27 @@
     <array name="progress_element3">
         <item name="left">160px</item>
         <item name="top">160px</item>
-        <item name="progress_type">1</item> <!-- 0 : arc/circle bar -->
-        <!-- screen-on images for type 1 -->
-        <item>battery/battery0</item>
-        <item>battery/battery1</item>
-        <item>battery/battery2</item>
-        <item>battery/battery3</item>
-        <item>battery/battery4</item>
-        <item>battery/battery5</item>
-        <item>battery/battery6</item>
-        <item>battery/battery7</item>
-        <item>battery/battery8</item>
-        <item>battery/battery9</item>
-        <item>battery/battery10</item>
-        <!-- screen-off images for type 1 -->
-        <item>slpt_battery/battery0</item> <!-- location in assets folder -->
-        <item>slpt_battery/battery1</item>
-        <item>slpt_battery/battery2</item>
-        <item>slpt_battery/battery3</item>
-        <item>slpt_battery/battery4</item>
-        <item>slpt_battery/battery5</item>
-        <item>slpt_battery/battery6</item>
-        <item>slpt_battery/battery7</item>
-        <item>slpt_battery/battery8</item>
-        <item>slpt_battery/battery9</item>
-        <item>slpt_battery/battery10</item>
+        <item name="progress_type">0</item> <!-- 0 : arc/circle bar, 1 : images as steps -->
+        <!-- parameters for type 0 -->
+        <item name="radius">160px</item>
+        <item name="thickness">9px</item>
+        <item name="start_angle">207</item>
+        <item name="end_angle">153</item>
+        <item name="clockwise">1</item> <!-- 1: clockwise, 0: anticlockwise -->
+        <item name="color">0</item> <!-- select from "colors" array -->
+        <item name="background">true</item>
+        <item name="background_color">#ff0000</item>
+        <item name="background_image_slpt">circles/ring1_bg</item>
+        <!-- screen-off images, one for each color -->
+        <item>circles/ring1_1.png</item>
+        <item>circles/ring1_2.png</item>
+        <item>circles/ring1_3.png</item>
+        <item>circles/ring1_4.png</item>
+        <item>circles/ring1_5.png</item>
+        <item>circles/ring1_6.png</item>
+        <item>circles/ring1_7.png</item>
+        <item>circles/ring1_8.png</item>
+        <item>circles/ring1_bg</item>
     </array>
 
 
@@ -295,12 +297,12 @@
     <!-- Supported Progress Elements -->
     <string-array name="supported_progress_elements">
         <item>battery</item> <!-- 0 -->
-        <item>steps</item> <!-- 1 -->
-        <item>today_distance</item>
-        <item>heart_rate</item> <!-- 0-200 bpm -->
-        <item>calories</item> <!-- set target in settings -->
+        <!--<item>steps</item> &lt;!&ndash; 1 &ndash;&gt;-->
+        <!--<item>today_distance</item>-->
+        <!--<item>heart_rate</item> &lt;!&ndash; 0-200 bpm &ndash;&gt;-->
+        <!--<item>calories</item> &lt;!&ndash; set target in settings &ndash;&gt;-->
         <!-- <item>humidity</item> -->
-        <item>phone_battery</item>
+        <!--<item>phone_battery</item>-->
         <!-- <item>wind_strength</item> -->
         <!-- <item>floors</item> -->
         <item>none</item>

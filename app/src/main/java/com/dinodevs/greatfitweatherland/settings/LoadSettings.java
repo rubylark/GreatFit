@@ -66,7 +66,7 @@ public class LoadSettings {
     public float hoursLeft;
     public float hoursTop;
     public int hoursColor;
-    public boolean hoursAlignLeft;
+    public int hoursAlign;
     // Indicator
     public float indicatorFontSize;
     public float indicatorLeft;
@@ -528,8 +528,9 @@ public class LoadSettings {
                 }else{
                     this.hoursColor = sharedPreferences.getInt("hoursColor", hours.getColor(i++, 0));
                 }
-
-                this.hoursAlignLeft = sharedPreferences.getBoolean("hoursAlignLeft", hours.getBoolean(i, true));
+                Log.d("Rubylark-Weatherland", "Hours alignment is " +hours.getInteger(i, 0));
+                this.hoursAlign = sharedPreferences.getInt("hoursAlign", hours.getInteger(i, 0));
+                //this.hoursAlignLeft = sharedPreferences.getBoolean("hoursAlignLeft", hours.getBoolean(i, true));
                 hours.recycle();
             }
         // Indicator

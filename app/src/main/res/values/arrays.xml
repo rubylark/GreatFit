@@ -4,25 +4,25 @@
     <!-- Constant Elements -->
     <array name="hours">
         <item name="font_size">90px</item> <!-- font size -->
-        <item name="left">90px</item> <!-- position top -->
+        <item name="left">135px</item> <!-- position top -->
         <item name="top">232px</item> <!-- position left -->
         <item name="color">#fff</item> <!-- color -->
-        <item name="align_left">false</item> <!-- align left -->
+        <item name="align">2</item> <!-- 0 = left, 1 = center, 2 = right -->
     </array>
     <!-- ":" -->
     <array name="indicator">
        <item name="font_size">90px</item>
-       <item name="left">160px</item>
-       <item name="top">232px</item>
+       <item name="left">145px</item>
+       <item name="top">226px</item>
        <item name="color">#fff</item>
        <item name="align_left">false</item>
     </array>
     <array name="minutes">
         <item name="font_size">90px</item>
-        <item name="left">225px</item>
+        <item name="left">157px</item>
         <item name="top">232px</item>
         <item name="color">#fff</item>
-        <item name="align_left">false</item> <!-- not supported -->
+        <item name="align_left">true</item> <!-- not supported -->
     </array>
     <!--array name="seconds">
        <item name="font_size">32px</item>

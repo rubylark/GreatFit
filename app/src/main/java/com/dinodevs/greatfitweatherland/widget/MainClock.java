@@ -200,7 +200,22 @@ public class MainClock extends DigitalClockWidget {
         this.hourFont.setTypeface(ResourceManager.getTypeFace(service.getResources(), ResourceManager.Font.FONT_FILE));
         this.hourFont.setTextSize(settings.hoursFontSize);
         this.hourFont.setColor(settings.hoursColor);
-        this.hourFont.setTextAlign((settings.hoursAlignLeft)? Paint.Align.LEFT : Paint.Align.CENTER);
+        switch(settings.hoursAlign)
+        {
+            case 1:
+                this.hourFont.setTextAlign(Paint.Align.CENTER);
+                Log.d("Rubylark-Weatherland","Hours are aligned center");
+                break;
+            case 2:
+                this.hourFont.setTextAlign(Paint.Align.RIGHT);
+                Log.d("Rubylark-Weatherland","Hours are aligned right");
+                break;
+            default:
+                this.hourFont.setTextAlign(Paint.Align.LEFT);
+                Log.d("Rubylark-Weatherland","Hours are aligned left");
+                break;
+        }
+        //this.hourFont.setTextAlign((settings.hoursAlignLeft)? Paint.Align.LEFT : Paint.Align.CENTER);
 
         this.minutesFont = new TextPaint(TextPaint.ANTI_ALIAS_FLAG);
         this.minutesFont.setTypeface(ResourceManager.getTypeFace(service.getResources(), ResourceManager.Font.FONT_FILE));
@@ -371,7 +386,7 @@ public class MainClock extends DigitalClockWidget {
                     (int) (settings.hoursFontSize)
             );
             hourLayout.setStart(
-                    -320,
+                    -362,//-320
                     (int) (settings.hoursTop-((float)settings.font_ratio/100)*settings.hoursFontSize)
             );
             //Add it to the list
@@ -397,7 +412,7 @@ public class MainClock extends DigitalClockWidget {
                     (int) (settings.minutesFontSize)
             );
             minuteLayout.setStart(
-                    -320,
+                    -268,//-320
                     (int) (settings.minutesTop-((float)settings.font_ratio/100)*settings.minutesFontSize)
             );
             //Add it to the list
